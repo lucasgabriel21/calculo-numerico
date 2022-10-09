@@ -6,13 +6,13 @@ import mpl_toolkits.mplot3d as Axes3d
 # Parâmetros
 Ro = 2
 r = 1
-tht = np.linspace(0, 2*pi, 50)
-phi = np.linspace(0, 2*pi, 50)
+tht = np.linspace(0, 2*pi)
+phi = np.linspace(0, 2*pi)
 
 # Meshgrid para criar malha do gráfico
 tht, phi = np.meshgrid(tht, phi)
 
-# Equações paramétricas:
+# Equações paramétricas (Toro):
 x = (Ro + r*cos(tht))*cos(phi)
 y = (Ro + r*cos(tht))*sin(phi)
 z = r*sin(tht)
@@ -33,10 +33,10 @@ ax.set_xlabel('Y')
 ax.set_xlabel('Z')
 
 # Título
-ax.set_title('Superfície')
+ax.set_title('Toro de revolução')
 
 # Ajuste de eixos
-# ax.axis('square')
+ax.set_zlim(-3, 3)
 
 # Apresenta a figura
 plt.show()

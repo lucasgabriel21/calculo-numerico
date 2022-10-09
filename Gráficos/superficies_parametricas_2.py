@@ -33,7 +33,7 @@ ax.set_ylabel('Y')
 ax.set_zlabel('Z')
 
 # Título
-ax.set_title('Superfície')
+ax.set_title('Cilindro')
 
 # Ajuste de eixos
 # ax.axis('square')
